@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FullCalendarComponent, FullCalendarModule } from '@fullcalendar/angular';
 import { CalendarOptions } from '@fullcalendar/core';
 import interactionPlugin, { DateClickArg } from '@fullcalendar/interaction';
-import multiMonthPlugin from '@fullcalendar/multiMonth';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import dayGridPlugin from '@fullcalendar/daygrid';
+import multiMonthPlugin from '@fullcalendar/multimonth';
 
 @Component({
   selector: 'app-index',
@@ -20,7 +20,7 @@ export class CalenedarIndexComponent {
 
   calendarOptions: CalendarOptions = {
     // 日曆類型
-    plugins: [multiMonthPlugin, dayGridPlugin, timeGridPlugin, interactionPlugin],
+    plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin, multiMonthPlugin],
     // 初始日曆類型
     initialView: 'multiMonthYear',
     // 顯示標題
