@@ -35,7 +35,7 @@ export class CalenedarIndexComponent {
     customButtons: {
       addEventButton: {
         text: 'add event...',
-        // click: this.handleAddEventClick.bind(this)
+        // click: this.handleAddEventClick.bind(this);
       }
     },
     // 可編輯
