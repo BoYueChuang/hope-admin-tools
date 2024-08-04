@@ -52,7 +52,7 @@ export class CalenedarIndexComponent {
       {
         "title": "Long Event",
         "start": "2024-08-07",
-        "end": "2024-08-10",
+        "end": "2024-08-10"
       },
       {
         "groupId": "999",
