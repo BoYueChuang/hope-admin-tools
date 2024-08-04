@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FullCalendarComponent, FullCalendarModule } from '@fullcalendar/angular';
 import { CalendarOptions } from '@fullcalendar/core';
 import interactionPlugin, { DateClickArg } from '@fullcalendar/interaction';
-// import multiMonthPlugin from '@fullcalendar/multiMonth';
+import multiMonthPlugin from '@fullcalendar/multiMonth';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import dayGridPlugin from '@fullcalendar/daygrid';
 
@@ -20,7 +20,7 @@ export class CalenedarIndexComponent {
 
   calendarOptions: CalendarOptions = {
     // 日曆類型
-    plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
+    plugins: [multiMonthPlugin, dayGridPlugin, timeGridPlugin, interactionPlugin],
     // 初始日曆類型
     initialView: 'multiMonthYear',
     // 顯示標題
@@ -43,7 +43,7 @@ export class CalenedarIndexComponent {
     // 可選擇
     selectable: true,
     // multiMonth 顯示 3 列
-    // multiMonthMaxColumns: 3,
+    multiMonthMaxColumns: 3,
     events: [
       {
         "title": "All Day Event",
